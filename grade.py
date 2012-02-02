@@ -5,8 +5,8 @@ import sys
 students = {}
 #The root path where this script file is located.
 root_path = os.getcwd()
-Main_class_files = ['BasketballDistanceCalculator.java', 'FootballDistanceCalculator.java']
-Staff_test_files = ['BasketballDistanceCalculatorTest.java','BasketballDistanceCalculatorTest2.java','FootballDistanceCalculatorTest.java']
+Main_class_files = ['']
+Staff_test_files = ['']
 if len(sys.argv) > 2:
 	project_name = sys.argv[1]
 	gradesheet = os.getcwd() + '/' + sys.argv[2]
