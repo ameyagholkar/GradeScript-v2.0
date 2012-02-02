@@ -5,6 +5,8 @@ Made with Python.
 This version of GradeScript aims to incorporate the compilation &
 execution of Student's Test files as well - along with all the previous
 functionality. 
+Previous? Yupp.. There is a version 1.0 - Duh! 
+It can be found here - https://github.com/ameyagholkar/GradeScript 
 
 Current Works aim at specifying a efficient protocol for handling of
 Scanner inputs so as to make the script either accept text re-direction
