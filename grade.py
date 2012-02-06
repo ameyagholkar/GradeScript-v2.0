@@ -219,7 +219,9 @@ def check_and_add_file_to_object(filename):
 			students[unityId].set_javaSrc(filename)
 		elif ftype == 'Test':
 			students[unityId].set_javaTest(filename)			
-		
+		else:
+			make_dir(unityId)
+			os.system("mv " + filename + " " + unityId)		
 #def process_test_folder():
 	
 
