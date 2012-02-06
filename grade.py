@@ -5,8 +5,12 @@ import sys
 students = {}
 #The root path where this script file is located.
 root_path = os.getcwd()
+# TO EDIT: Enter the filenames which contain the `main` function Filenames are in single quotes and multiple filenames 
+# are separated by commas
 Main_class_files = ['']
+# TO EDIT: Enter the filenames which are the Staff test cases. Multiple filenames are allowed. Enter filenames as above.
 Staff_test_files = ['']
+# This block processes the command line arguments.
 if len(sys.argv) > 2:
 	project_name = sys.argv[1]
 	gradesheet = os.getcwd() + '/' + sys.argv[2]
@@ -19,12 +23,18 @@ else:
 #Approach for this script will be to use objects for each student and process each object separately. 
 class JavaProject:
 	def __init__(self,unityId):
+		# The Student's Unity ID.
 		self.unityId = unityId
-		self.javaSrc = []
+		# List of the JAVA source files.
+		self.javaSrc = [] 
+		# List of the Test files provided by the student.
 		self.javaTest = []
+		# List of the compiled output files.
 		self.javaOutput = []
+		# Temp List.
 		self.to_delete = []
-			
+	
+	# Standard Getters, Setters and Replacers.
 	def get_unityId(self):
 		return self.unityId
 	
